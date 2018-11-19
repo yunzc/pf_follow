@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(pf_follow)
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(marker_gen/gen marker_gen/gen.cpp)
+add_executable(track/tracker track/aruco_track.cpp)
+target_link_libraries(marker_gen/gen ${OpenCV_LIBS})
+target_link_libraries(track/tracker ${OpenCV_LIBS})
