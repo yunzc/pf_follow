@@ -1,8 +1,7 @@
 %% detect - main 
 clear
-% build: mexOpenCV track.cpp -L/usr/local/lib -lopencv_aruco -I/usr/local/include/opencv2 -I/usr/local/include/opencv -I/usr/local/include
-
-
+% build: mexOpenCV tracker_mex.cpp -L/usr/lib -lopencv_aruco -I/usr/include/opencv2 -I/usr/include/opencv -I/usr/include
+% mexOpenCV tracker_mex.cpp -L~/opencv310/lib/ -lopencv_aruco.3.1.0 -I/usr/include
 
 cam = webcam;
 

@@ -24,7 +24,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs,  const mxArray *prhs[])
 
     //vector<Vec3d> rotationVectors, translationVectors;
 
-/*
+
     // ----------------- detect
     aruco::detectMarkers(frame, markerDictionary, markerCorners, markerIds );
     
@@ -32,7 +32,6 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs,  const mxArray *prhs[])
     {
 	aruco::drawDetectedMarkers( frame, markerCorners, markerIds);
     }
-*/
 
     plhs[0] = ocvMxArrayFromImage_uint8(frame);
 
